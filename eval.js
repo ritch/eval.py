@@ -2,7 +2,7 @@ var spawn = require('child_process').spawn
   , py = spawn('python', [__dirname + '/eval.py'])
 ;
 
-exports.timeout = 30000;
+exports.timeout = 30000; 
 
 exports.exec = function (src, done) {
   py.stdout.once('data', function (data) {
