@@ -1,0 +1,16 @@
+{
+  "author": "Ritchie Martori",
+  "name": "eval.py",
+  "description": "eval python in node",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ritch/eval.py.gitgit.git"
+  },
+  "main": "eval.js",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
