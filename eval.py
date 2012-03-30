@@ -1,9 +1,13 @@
 import sys
-import json 
+import json
 
-while True:
-  src = raw_input()
-  if src.startswith('import'):
+src = '';
+
+while src != 'exit()':
+  src = sys.stdin.readline().rstrip()
+
+  if src.startswith('exec: '):
+    src = src.split('exec: ')[1]
     exec src
   else:
     print(json.dumps(eval(src)))
