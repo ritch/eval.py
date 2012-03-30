@@ -4,7 +4,7 @@ var spawn = require('child_process').spawn
 
 exports.timeout = 30000; 
 
-exports.exec = function (src, done) {
+exports.eval = function (src, done) {
   py.stdout.once('data', function (data) {
     done(null, JSON.parse(data.toString()));
   });
